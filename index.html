@@ -1,96 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KL PLOMB - Services de plomberie professionnels à Douala</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="public/images/logo.png" alt="KL PLOMB Logo" class="logo-img">
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#accueil" class="active">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#a-propos">À Propos</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#processus">Notre Processus</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="accueil" class="hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="animated-text">SERVICE FUTUR</h2>
+        <p>Toujours dans le professionnalisme total!</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Demander un devis</a>
+          <a href="#services" class="btn btn-secondary">Nos services</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Nos Services</h2>
+        <p>Solutions complètes pour tous vos besoins en plomberie à Douala</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-shower"></i>
+          </div>
+          <h3>Installation de plomberie</h3>
+          <p>Installation professionnelle de tous types de systèmes de plomberie pour votre maison ou entreprise à Douala et ses environs.</p>
+          <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3>Réparations d'urgence</h3>
+          <p>Service rapide 24/7 pour toutes les urgences de plomberie à Douala, des fuites aux tuyaux éclatés. Intervention en moins de 60 minutes.</p>
+          <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-toilet"></i>
+          </div>
+          <h3>Rénovation de salle de bain</h3>
+          <p>Transformation complète de votre salle de bain avec des installations modernes et efficaces adaptées au climat camerounais.</p>
+          <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Détection de fuites</h3>
+          <p>Technologie avancée pour détecter et réparer les fuites cachées avant qu'elles ne causent des dommages à votre propriété à Douala.</p>
+          <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3>Débouchage de canalisations</h3>
+          <p>Élimination efficace des obstructions dans vos canalisations pour restaurer un écoulement normal, même pendant la saison des pluies.</p>
+          <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-icon">
+            <i class="fas fa-temperature-high"></i>
+          </div>
+          <h3>Chauffe-eau</h3>
+          <p>Installation, réparation et entretien de tous types de chauffe-eau pour un confort optimal, y compris les systèmes solaires adaptés au climat de Douala.</p>
+          <a href="#contact" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-number" data-count="1500">0</div>
+          <div class="stat-text">Clients satisfaits</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="stat-number" data-count="3200">0</div>
+          <div class="stat-text">Projets réalisés</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-text">Années d'expérience</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="stat-number" data-count="12">0</div>
+          <div class="stat-text">Prix d'excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-propos" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Équipe de plombiers professionnels">
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <div class="section-header">
+            <h2>À Propos de Nous</h2>
+            <p>Votre plombier de confiance à Douala depuis 2005</p>
+          </div>
+          <p>Chez KL PLOMB, nous sommes fiers d'offrir des services de plomberie exceptionnels à Douala et ses environs depuis plus de 15 ans. Notre équipe de plombiers certifiés possède l'expertise nécessaire pour résoudre tous vos problèmes de plomberie dans les conditions spécifiques du Cameroun.</p>
+          <p>Nous comprenons les défis uniques que présente le climat tropical de Douala pour les systèmes de plomberie, et nous avons développé des solutions adaptées qui résistent aux fortes pluies et à l'humidité élevée de la région.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Plombiers certifiés</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Service 24/7</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Garantie satisfaction</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Prix transparents</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-4">Contactez-nous</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Notre Galerie</h2>
+        <p>Découvrez nos réalisations récentes à Douala</p>
+      </div>
+      <div class="gallery-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="bathroom">Salles de bain</button>
+        <button class="filter-btn" data-filter="kitchen">Cuisines</button>
+        <button class="filter-btn" data-filter="repair">Réparations</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="bathroom" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Installation de salle de bain">
+          <div class="gallery-overlay">
+            <h3>Rénovation complète</h3>
+            <p>Salle de bain moderne à Bonanjo, Douala</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="repair" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Réparation de tuyauterie">
+          <div class="gallery-overlay">
+            <h3>Remplacement de tuyaux</h3>
+            <p>Système de plomberie résidentiel à Akwa, Douala</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="kitchen" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1568&q=80" alt="Installation de cuisine">
+          <div class="gallery-overlay">
+            <h3>Installation de cuisine</h3>
+            <p>Plomberie complète à Bonapriso, Douala</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="repair" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1496&q=80" alt="Chauffe-eau">
+          <div class="gallery-overlay">
+            <h3>Installation de chauffe-eau</h3>
+            <p>Système économe en énergie à Deido, Douala</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="repair" data-aos="zoom-in" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="Débouchage">
+          <div class="gallery-overlay">
+            <h3>Débouchage professionnel</h3>
+            <p>Canalisations commerciales à Bali, Douala</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bathroom" data-aos="zoom-in" data-aos-delay="500">
+          <img src="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Réparation d'urgence">
+          <div class="gallery-overlay">
+            <h3>Intervention d'urgence</h3>
+            <p>Réparation de fuite à Bonaberi, Douala</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="processus" class="process">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Notre Processus</h2>
+        <p>Comment nous travaillons pour vous offrir un service exceptionnel</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step" data-aos="fade-right">
+          <div class="process-number">1</div>
+          <div class="process-content">
+            <h3>Prise de contact</h3>
+            <p>Contactez-nous par téléphone, email ou via notre formulaire en ligne pour décrire votre problème ou projet de plomberie.</p>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-left">
+          <div class="process-number">2</div>
+          <div class="process-content">
+            <h3>Consultation et diagnostic</h3>
+            <p>Nos experts se rendent chez vous à Douala pour évaluer la situation et vous proposer les meilleures solutions adaptées à vos besoins.</p>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-right">
+          <div class="process-number">3</div>
+          <div class="process-content">
+            <h3>Devis transparent</h3>
+            <p>Nous vous fournissons un devis détaillé et transparent, sans frais cachés, pour que vous puissiez prendre une décision éclairée.</p>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-left">
+          <div class="process-number">4</div>
+          <div class="process-content">
+            <h3>Exécution des travaux</h3>
+            <p>Notre équipe de plombiers qualifiés réalise les travaux avec professionnalisme, en respectant les délais et en minimisant les perturbations.</p>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-right">
+          <div class="process-number">5</div>
+          <div class="process-content">
+            <h3>Contrôle qualité</h3>
+            <p>Nous effectuons des tests rigoureux pour nous assurer que tout fonctionne parfaitement avant de considérer le travail comme terminé.</p>
+          </div>
+        </div>
+        <div class="process-step" data-aos="fade-left">
+          <div class="process-number">6</div>
+          <div class="process-content">
+            <h3>Suivi et garantie</h3>
+            <p>Nous assurons un suivi après l'intervention et offrons une garantie sur tous nos travaux pour votre tranquillité d'esprit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages" class="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Témoignages Clients</h2>
+        <p>Ce que nos clients à Douala disent de nous</p>
+      </div>
+      <div class="testimonial-slider" data-aos="fade-up">
+        <div class="testimonial-slide active">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <i class="fas fa-quote-left"></i>
+              <p>Service exceptionnel ! L'équipe de KL PLOMB est arrivée rapidement à mon domicile à Bonanjo et a résolu notre problème de fuite en un rien de temps. Très professionnels et prix raisonnables.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+              </div>
+              <div class="author-info">
+                <h4>Marie Ngo</h4>
+                <p>Bonanjo, Douala</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <i class="fas fa-quote-left"></i>
+              <p>J'ai fait appel à KL PLOMB pour la rénovation complète de ma salle de bain à Bonapriso. Le résultat est magnifique et le travail a été réalisé dans les délais prévus malgré les défis liés à la saison des pluies.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+              </div>
+              <div class="author-info">
+                <h4>Thomas Kamga</h4>
+                <p>Bonapriso, Douala</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <i class="fas fa-quote-left"></i>
+              <p>Service client impeccable. Ils ont répondu à toutes mes questions et m'ont proposé la solution la plus économique pour mon problème de chauffe-eau. Je recommande vivement KL PLOMB à tous les habitants de Douala.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+              </div>
+              <div class="author-info">
+                <h4>Sophie Mbarga</h4>
+                <p>Akwa, Douala</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <i class="fas fa-quote-left"></i>
+              <p>En tant que gérant d'hôtel à Douala, j'ai besoin d'un service de plomberie fiable et rapide. KL PLOMB a toujours répondu présent, même en pleine nuit. Leur équipe est professionnelle et efficace.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client">
+              </div>
+              <div class="author-info">
+                <h4>Jean-Paul Fotso</h4>
+                <p>Bali, Douala</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Questions Fréquentes</h2>
+        <p>Réponses aux questions les plus courantes sur nos services de plomberie à Douala</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item" data-aos="fade-up">
+          <div class="faq-question">
+            <h3>Quels sont vos délais d'intervention à Douala ?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Pour les urgences à Douala, nous intervenons généralement dans l'heure qui suit votre appel. Pour les projets planifiés, nous établissons un calendrier en fonction de vos besoins et de la complexité du travail.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-question">
+            <h3>Offrez-vous une garantie sur vos travaux ?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Oui, tous nos travaux de plomberie sont garantis. Nous offrons une garantie de 1 an sur la main-d'œuvre et nous respectons les garanties des fabricants pour les pièces et équipements installés.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-question">
+            <h3>Comment gérez-vous les problèmes liés à la saison des pluies à Douala ?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Nous avons développé des techniques spécifiques pour faire face aux défis de la saison des pluies à Douala. Nos solutions incluent des systèmes de drainage renforcés, des matériaux résistants à l'humidité et des inspections préventives avant la saison des pluies.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="faq-question">
+            <h3>Quels modes de paiement acceptez-vous ?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Nous acceptons les paiements en espèces, par virement bancaire, par Mobile Money (Orange Money, MTN Mobile Money) et par carte bancaire pour votre commodité.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="faq-question">
+            <h3>Proposez-vous des solutions écologiques ?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Oui, nous proposons des solutions de plomberie écologiques adaptées au contexte camerounais, comme des systèmes de récupération d'eau de pluie, des chauffe-eau solaires et des équipements à faible consommation d'eau.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Contactez-Nous</h2>
+        <p>Nous sommes là pour vous aider à Douala</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Notre adresse</h3>
+              <p>123 Boulevard de la Liberté<br>Akwa, Douala, Cameroun</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Téléphone</h3>
+              <p>+237 6 80 32 62 56</p>
+              <p>Urgences: +237 6 97 05 03 29</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>fotsolotchouang456@gmail.com</p>
+             
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Heures d'ouverture</h3>
+              <p>Lun-Sam: 7h30 - 18h00</p>
+              <p>Urgences: 24h/24, 7j/7</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Service requis</label>
+              <select id="service" name="service">
+                <option value="">Sélectionnez un service</option>
+                <option value="installation">Installation de plomberie</option>
+                <option value="reparation">Réparation d'urgence</option>
+                <option value="renovation">Rénovation de salle de bain</option>
+                <option value="detection">Détection de fuites</option>
+                <option value="debouchage">Débouchage de canalisations</option>
+                <option value="chauffe-eau">Chauffe-eau</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          </form>
+          <div id="formSuccess" class="form-success">
+            <i class="fas fa-check-circle"></i>
+            <p>Votre message a été envoyé avec succès. Nous vous contacterons bientôt!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-container" data-aos="zoom-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63695.80567258048!2d9.686143699999999!3d4.050297349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061128340344df9%3A0x58842b4d2b616799!2sDouala%2C%20Cameroun!5e0!3m2!1sfr!2sfr!4v1650123456789!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <div class="cta-section parallax-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Besoin d'un service d'urgence à Douala?</h2>
+        <p>Notre équipe est disponible 24h/24 et 7j/7 pour toutes les urgences de plomberie</p>
+        <a href="tel:+237697050329" class="btn btn-primary"><i class="fas fa-phone-alt"></i> +237 697 05 03 29</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo" data-aos="fade-up">
+          <img src="public/images/logo.png" alt="KL PLOMB Logo" class="footer-logo-img">
+          <p>Toujours dans le professionnalisme total!</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#processus">Notre Processus</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services" data-aos="fade-up" data-aos-delay="200">
+          <h3>Nos services</h3>
+          <ul>
+            <li><a href="#services">Installation de plomberie</a></li>
+            <li><a href="#services">Réparations d'urgence</a></li>
+            <li><a href="#services">Rénovation de salle de bain</a></li>
+            <li><a href="#services">Détection de fuites</a></li>
+            <li><a href="#services">Débouchage de canalisations</a></li>
+            <li><a href="#services">Chauffe-eau</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="300">
+          <h3>Newsletter</h3>
+          <p>Inscrivez-vous pour recevoir nos dernières offres et conseils</p>
+          <form id="newsletterForm">
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 KL PLOMB. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
+
